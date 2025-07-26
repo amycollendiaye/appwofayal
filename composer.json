@@ -1,0 +1,21 @@
+{
+    "name": "teamdoyen/project",
+    "description": "it's for a architecture project php",
+    "type": "project",
+    "require": {
+        "vlucas/phpdotenv": "5.6.x-dev",
+        "symfony/yaml": "7.4.x-dev"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Teamdoyen\\Project\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "teamdoyen"
+        }
+    ],
+    "minimum-stability": "dev"
+}
