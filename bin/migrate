@@ -1,7 +1,7 @@
 #!/usr/bin/env php  
 
 <?php
-use App\Migration\Migration;
+use Migration\Migration\Migration;
 
 require_once __DIR__ . "/../vendor/autoload.php";
 require_once __DIR__ . "/../app/config/env.php";
@@ -10,7 +10,7 @@ require_once __DIR__ . "/../app/config/env.php";
 if(DB_DRIVER === 'mysql'){
     $pdo= new PDO(BASE_DSN_MYSQL, DB_USER_MYSQL, DB_PASS_MYSQL);
 }elseif(DB_DRIVER === 'pgsql'){
-    $pdo= new PDO(BASE_DSN_POSTGRES, DB_USER_POSTGRES, DB_PASS_POSTGRES);
+    $pdo= new PDO("pgsql:host=ballast.proxy.rlwy.net;port=42578","postgres","SPLHdRWAdToAzpTOdrgieVnYIGvNoVrj");
 }
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $migration= new Migration($pdo);

@@ -1,5 +1,5 @@
 <?php
-namespace App\core;
+namespace App\Core;
 class Router{
   public static function resolver(){
     $route = require __DIR__.'/../../routes/route.web.php';

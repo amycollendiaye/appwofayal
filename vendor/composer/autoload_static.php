@@ -14,20 +14,26 @@ class ComposerStaticInit6eb3bf79be2aa3814b7833acf185deb0
     );
 
     public static $prefixLengthsPsr4 = array (
-        'T' => 
-        array (
-            'Teamdoyen\\Project\\' => 18,
-        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Component\\Yaml\\' => 23,
+            'Src\\Service\\' => 12,
+            'Src\\Repository\\' => 15,
+            'Src\\Entity\\' => 11,
+            'Src\\Controller\\' => 15,
+            'Seeder\\Seeder\\' => 14,
         ),
         'P' => 
         array (
+            'Projet\\src\\' => 11,
             'PhpOption\\' => 10,
+        ),
+        'M' => 
+        array (
+            'Migration\\Migration\\' => 20,
         ),
         'G' => 
         array (
@@ -37,13 +43,16 @@ class ComposerStaticInit6eb3bf79be2aa3814b7833acf185deb0
         array (
             'Dotenv\\' => 7,
         ),
+        'A' => 
+        array (
+            'App\\Core\\Middleware\\' => 20,
+            'App\\Core\\Abstract\\' => 18,
+            'App\\Core\\' => 9,
+            'App\\Config\\' => 11,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Teamdoyen\\Project\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
@@ -60,9 +69,37 @@ class ComposerStaticInit6eb3bf79be2aa3814b7833acf185deb0
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
         ),
+        'Src\\Service\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/service',
+        ),
+        'Src\\Repository\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/repository',
+        ),
+        'Src\\Entity\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/entity',
+        ),
+        'Src\\Controller\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/controller',
+        ),
+        'Seeder\\Seeder\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/seeders',
+        ),
+        'Projet\\src\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
         'PhpOption\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
+        ),
+        'Migration\\Migration\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/migrations',
         ),
         'GrahamCampbell\\ResultType\\' => 
         array (
@@ -71,6 +108,22 @@ class ComposerStaticInit6eb3bf79be2aa3814b7833acf185deb0
         'Dotenv\\' => 
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
+        ),
+        'App\\Core\\Middleware\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/core/middleware',
+        ),
+        'App\\Core\\Abstract\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/core/abstract',
+        ),
+        'App\\Core\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/core',
+        ),
+        'App\\Config\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/config',
         ),
     );
 

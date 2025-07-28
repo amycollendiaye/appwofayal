@@ -7,7 +7,9 @@ class Database {
   private function __construct(){}
   public static function getInstance(){
     if(self::$pdo === null){
-      self::$pdo = new PDO($_ENV['DSN_POSTGRES'],$_ENV['DB_USER'],$_ENV['DB_PASS_POSTGRES'],
+            $dsn='pgsql:host=ballast.proxy.rlwy.net;dbname=railway;port=42578';
+
+      self::$pdo = new PDO($dsn,"postgres","SPLHdRWAdToAzpTOdrgieVnYIGvNoVrj",
       [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC

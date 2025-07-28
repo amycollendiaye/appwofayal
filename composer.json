@@ -9,8 +9,24 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Teamdoyen\\Project\\": "src/"
-        }
+            "Projet\\src\\": "src/",
+            "Src\\Entity\\": "src/entity",
+            "Src\\Controller\\": "src/controller",
+            "Src\\Service\\": "src/service",
+            "Src\\Repository\\": "src/repository",
+            "App\\Config\\":"app/config",
+            "App\\Core\\":"app/core",
+            "App\\Core\\Middleware\\":"app/core/middleware",
+            "App\\Core\\Abstract\\":"app/core/abstract",
+            "Seeder\\Seeder\\":"seeders",
+            "Migration\\Migration\\":"migrations"        }
+    },
+    "scripts": {
+        "database:migrate": "@php  bin/migrate",
+        "database:seed": "@php  bin/seed" 
+
+
+
     },
     "authors": [
         {

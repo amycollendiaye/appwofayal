@@ -29,6 +29,7 @@ services:
     container_name: appwoyofal_db
     environment:
       POSTGRES_DB: appwoyofal
+
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: rama
     volumes:

@@ -1,4 +1,9 @@
 <?php
+namespace Seeder\Seeder;
+
+use PDO;
+use Exception;
+use PDOException;
 
 class Seeder
 {
